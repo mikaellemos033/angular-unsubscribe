@@ -7,7 +7,7 @@
   "typings": "dist/index.d.ts",
   "repository": "https://github.com/mikaellemos033/angular-unsubscribe",
   "files": [
-    "src",
+    "dist",
     "LICENSE",
     "README.md"
   ],
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "clean": "del-cli dist",
-    "build": "npm run clean ; tsc -p tsconfig.json && tsc -p tsconfig.dist.es2015.json",
+    "build": "del-cli dist && tsc -p tsconfig.json && tsc -p tsconfig.dist.es2015.json",
     "prepublishOnly": "npm test && npm run build",
     "postpublish": "git push",
     "test": "mocha --opts spec/mocha.opts src/**/*test.ts"
