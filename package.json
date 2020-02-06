@@ -7,7 +7,7 @@
   "typings": "dist/index.d.ts",
   "repository": "https://github.com/mikaellemos033/angular-unsubscribe",
   "files": [
-    "dist",
+    "src",
     "LICENSE",
     "README.md"
   ],
