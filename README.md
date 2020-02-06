@@ -4,7 +4,7 @@
  A ideia da lib é facilitar o Unsubscribe de Obsevables, Atráves das funções reativas do RXJS e Callbacks de eventos oferecidos pelos Components do Angular.
  
 **Requisitos**
-- Requisito >= RxJS 6.0.0 (part of Angular 6)
+- Requisito >= RxJS 6.0.0 (Angular >= 6)
   
 
 **Com Funciona?**  
@@ -34,7 +34,7 @@ export class FooComponent implements OnInit, OnDestroy {
 			// o parâmetro this é a referencia da class do
 			// component para ser possível monitorar a 
 			// ação do destroy
-			.pipe(takeUntil(componentDestroyed(this))) // é retorndo um observable para a função takeUntil
+			.pipe(takeUntil(AngularUnsubscribe.destroyed(this))) // é retorndo um observable para a função takeUntil
 			.subscribe();
 	}
 
