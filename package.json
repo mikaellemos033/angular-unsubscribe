@@ -1,11 +1,11 @@
 {
-  "name": "unicid-unsubscribe",
+  "name": "angular-unsubscribe",
   "version": "1.0.0",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/es2015/index.js",
   "typings": "dist/index.d.ts",
-  "repository": "https://github.com/mikaellemos033/unicid-unsubscribe",
+  "repository": "https://github.com/mikaellemos033/angular-unsubscribe",
   "files": [
     "dist",
     "LICENSE",
